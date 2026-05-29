@@ -1,0 +1,15 @@
+{
+  "name": "nauvis-scrap",
+  "version": "1.0.0",
+  "title": "Scrap on Nauvis",
+  "author": "Shaydz",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base >= 2.0.0",
+    "space-age >= 2.0.0",
+    "? everything-on-nauvis",
+    "? Mining_Drones_Remastered",
+    "? Krastorio2-spaced-out"
+  ],
+  "description": "Re-adds Scrap generation to Nauvis map generation for use with 'Everything on Nauvis' or similar mods."
+}
