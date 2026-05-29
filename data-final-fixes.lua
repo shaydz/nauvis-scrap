@@ -82,14 +82,10 @@ if recycling_tech then
     recycling_tech.prerequisites = {"logistic-science-pack"}
 end
 
--- Step 5: Remove surface_conditions from the recycler so it can be placed on Nauvis.
-local recycler = data.raw.furnace["recycler"]
-if recycler then
-    recycler.surface_conditions = nil
-end
-
--- Step 6: Remove surface_conditions from scrap-recycling recipe if present.
-local scrap_recycling = data.raw.recipe["scrap-recycling"]
-if scrap_recycling then
-    scrap_recycling.surface_conditions = nil
+-- Step 5: Remove surface_conditions from the recycler crafting recipe so the
+-- recycler item can be crafted in an assembler on Nauvis. The recycler entity
+-- itself is already placeable and functional on Nauvis without modification.
+local recycler_recipe = data.raw.recipe["recycler"]
+if recycler_recipe then
+    recycler_recipe.surface_conditions = nil
 end
